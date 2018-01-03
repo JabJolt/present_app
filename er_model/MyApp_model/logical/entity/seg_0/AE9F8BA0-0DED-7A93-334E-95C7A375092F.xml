@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE9F8BA0-0DED-7A93-334E-95C7A375092F" name="DIM_CURRENCY">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-23 21:35:06 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DIM_CURRENCY</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CURRNECY_ID" id="56B629A9-A9AA-4EF2-56CF-155BC71B1594">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-23 21:35:19 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CURRENCY_CODE" id="6E1A8BCC-BFEB-8A60-86CC-E422571C32B7">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-23 21:35:43 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPTION" id="96A131FD-F50B-DDB8-CD03-2A6A766C2CF2">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-23 21:36:08 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D1805679-E504-1934-D970-77D49977BA1D" name="DIM_CURRENCY PK">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-23 21:35:35 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>56B629A9-A9AA-4EF2-56CF-155BC71B1594</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

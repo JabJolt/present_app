@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90675D86-C4D0-EA7A-D870-5EA5BB5D82E8" name="GIVING">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 22:09:42 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>GIVING</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GIVING_ID" id="77AA8568-DFC6-3089-B236-2F01EBE09551">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 22:09:58 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GIFT_ID" id="3C5A5297-DFF0-1EFC-92D5-49A4F9B3CA72">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 22:14:15 UTC</createdTime>
+<generatorID>6B681CE5-0CC1-F8F9-89D6-176DDE39B6EB</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>F3D430AA-D2B2-EB4E-FB22-AB5CC7831540</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSON_TO" id="B10A7D07-BC56-05CA-8CAD-CE4335583639">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-26 20:03:07 UTC</createdTime>
+<generatorID>39537399-4F6B-CF4D-EF6B-2657BEF7725D</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>9F9C9673-7316-481C-0EB4-EA9EF2F02340</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSON_FROM" id="F06DDD0A-0C93-E4F8-21E3-D825F5C88717">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-26 20:03:17 UTC</createdTime>
+<generatorID>FA6DB984-9827-A273-1F77-A6D23F5116AC</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>9F9C9673-7316-481C-0EB4-EA9EF2F02340</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REACTION" id="F16805B3-02E9-2CEF-FD7E-DD8F96616F63">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-26 20:04:59 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500 CHAR</dataTypeSize>
+<ownDataTypeParameters>500 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DTTM" id="83843E0F-E2D8-D409-ACD3-7049C331D18A">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 22:18:56 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="48414F91-4936-A035-7886-5EE3748DF3B3" name="GIVING PK">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 22:10:14 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>77AA8568-DFC6-3089-B236-2F01EBE09551</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

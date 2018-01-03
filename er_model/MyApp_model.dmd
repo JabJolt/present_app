@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MyApp_model" id="DE9F25F3-F5A1-766D-C315-0D43467970BF" version="3.5">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 19:51:55 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DE9F25F3-F5A1-766D-C315-0D43467970BF</designId>
+</OSDM_Design>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2789C54E-B52C-0371-C9DA-7ECDFB1D6548" name="PERIOD">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-24 19:47:00 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PERIOD</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PERIOD_ID" id="C333486F-2ADF-61FB-8ACE-1AFE4141B43C">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-24 19:47:17 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_FROM" id="673A5294-697C-C3A2-314D-ECEDCDEB039E">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-24 19:47:31 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_TO" id="ECF8C9C9-6D03-56EE-112B-BDC4F57E071A">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-24 19:47:46 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVENT_ID" id="AA747657-9443-3A5D-56D3-BFE6060885E2">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-28 19:25:30 UTC</createdTime>
+<generatorID>585520E3-6CC9-D5DA-28C5-CCCA26C6DB0F</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>959D5D35-C8CA-FADB-2037-877E458D77F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPTION" id="295AF70A-355B-B1FA-56E0-66141BD411DF">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-28 19:51:17 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="910B17B3-AA1D-ABCD-2EFB-1BBAA5A9D6AC" name="PERIOD PK">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-24 19:47:29 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C333486F-2ADF-61FB-8ACE-1AFE4141B43C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

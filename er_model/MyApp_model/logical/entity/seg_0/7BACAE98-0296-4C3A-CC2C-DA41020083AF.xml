@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BACAE98-0296-4C3A-CC2C-DA41020083AF" name="EVENT">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 20:36:21 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>EVENT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EVENT_ID" id="959D5D35-C8CA-FADB-2037-877E458D77F8">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 20:37:01 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVENT_NAME" id="EDA26361-EDE9-3A4F-C812-EF6CB2EB28E5">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 20:37:23 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EVENT_DATE" id="0DEA6E85-0681-1058-5E18-A1A31037E115">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-24 19:45:54 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPTION" id="46F438B1-65F7-7FE8-3739-0BDECA339BC6">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 20:37:43 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PERSON_ID" id="C4B99D2E-BE05-52D2-9256-0015D7ECC985">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-28 19:24:45 UTC</createdTime>
+<generatorID>1B39279B-C20A-B634-B388-F49AD2BEEC3F</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>9F9C9673-7316-481C-0EB4-EA9EF2F02340</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E2AEAAA8-2B59-9818-2EC6-07CF489A8482" name="EVENT PK">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-22 20:37:13 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>959D5D35-C8CA-FADB-2037-877E458D77F8</newElementsIDs>
+<usedAttributes>
+<attributeRef>959D5D35-C8CA-FADB-2037-877E458D77F8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

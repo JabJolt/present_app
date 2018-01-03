@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<EntityView class="oracle.dbtools.crest.model.design.logical.EntityView" directorySegmentName="seg_0" id="F626775C-57E7-54B7-8C5E-EF4CDC83475E" name="ACTUAL_PERIODS">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-28 19:28:37 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<userDefined>true</userDefined>
+<userDefinedSQL>create view if not exists V_ACT_PERIOD as&lt;br/&gt;select * from PERIOD &lt;br/&gt;    where strftime(&apos;%Y/%m/%d&apos;,DATETIME(&apos;NOW&apos;)) between DATE_FROM and DATE_TO;</userDefinedSQL>
+<parsed>true</parsed>
+<viewType>EntityView</viewType>
+<usedContainers>
+<container containerID="2789C54E-B52C-0371-C9DA-7ECDFB1D6548"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="PERIOD_ID" id="1AE6558E-B251-08B2-302A-B4CC2B5EA0AC">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-30 23:01:09 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<referencedColumn>C333486F-2ADF-61FB-8ACE-1AFE4141B43C</referencedColumn>
+<table>2789C54E-B52C-0371-C9DA-7ECDFB1D6548</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DATE_FROM" id="AE8D09B2-C879-A000-82B0-2ACF1A452348">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-30 23:01:09 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>673A5294-697C-C3A2-314D-ECEDCDEB039E</referencedColumn>
+<table>2789C54E-B52C-0371-C9DA-7ECDFB1D6548</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DATE_TO" id="27D40DB8-8172-9CBA-617F-2C3C5C9D3186">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-30 23:01:09 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>DATE</dataType>
+<reference>false</reference>
+<referencedColumn>ECF8C9C9-6D03-56EE-112B-BDC4F57E071A</referencedColumn>
+<table>2789C54E-B52C-0371-C9DA-7ECDFB1D6548</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="EVENT_ID" id="E01749A7-1DC2-FAA8-4208-D437301198C4">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-30 23:01:09 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER</dataType>
+<reference>false</reference>
+<referencedColumn>AA747657-9443-3A5D-56D3-BFE6060885E2</referencedColumn>
+<table>2789C54E-B52C-0371-C9DA-7ECDFB1D6548</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.logical.AttributeView" name="DESCRIPTION" id="28039076-7398-9743-B200-41CF8F532E93">
+<createdBy>dionis</createdBy>
+<createdTime>2017-12-30 23:01:09 UTC</createdTime>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (500)</dataType>
+<reference>false</reference>
+<referencedColumn>295AF70A-355B-B1FA-56E0-66141BD411DF</referencedColumn>
+<table>2789C54E-B52C-0371-C9DA-7ECDFB1D6548</table>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2789C54E-B52C-0371-C9DA-7ECDFB1D6548">
+<container>true</container>
+<tableName>PERIOD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="673A5294-697C-C3A2-314D-ECEDCDEB039E">
+<columnName>DATE_FROM</columnName>
+<tableName>PERIOD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="ECF8C9C9-6D03-56EE-112B-BDC4F57E071A">
+<columnName>DATE_TO</columnName>
+<tableName>PERIOD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C333486F-2ADF-61FB-8ACE-1AFE4141B43C">
+<columnName>PERIOD_ID</columnName>
+<tableName>PERIOD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AA747657-9443-3A5D-56D3-BFE6060885E2">
+<columnName>EVENT_ID</columnName>
+<tableName>PERIOD</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="295AF70A-355B-B1FA-56E0-66141BD411DF">
+<columnName>DESCRIPTION</columnName>
+<tableName>PERIOD</tableName>
+</UsedObject>
+</usedObjects>
+</EntityView>
