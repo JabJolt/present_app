@@ -81,6 +81,34 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="PERIOD_ID" id="7AA3721F-B586-9AD0-E159-92A9825F4AAE">
+<createdBy>dionis</createdBy>
+<createdTime>2018-01-04 21:55:06 UTC</createdTime>
+<generatorID>A3552030-C14A-14E2-9FB2-2E7653AD4FF0</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>C333486F-2ADF-61FB-8ACE-1AFE4141B43C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORY_ID" id="FEFE3682-B953-0D60-BDEC-F643786C05A0">
+<createdBy>dionis</createdBy>
+<createdTime>2018-01-07 13:05:03 UTC</createdTime>
+<generatorID>374B0124-25FC-7026-69A7-6B7605B47E9D</generatorID>
+<ownerDesignName>MyApp_model</ownerDesignName>
+<engineerTo>
+<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
+</engineerTo>
+<referedAttribute>326CB0B9-DD06-B92C-6CBA-6AB9108C3B0D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E2AEAAA8-2B59-9818-2EC6-07CF489A8482" name="EVENT PK">

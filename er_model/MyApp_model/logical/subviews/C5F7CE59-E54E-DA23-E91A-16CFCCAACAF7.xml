@@ -16,12 +16,12 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2789C54E-B52C-0371-C9DA-7ECDFB1D6548" otype="Entity" vid="08E5E6B1-91FF-1FC7-25CD-3AB1C53E23D1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="566" y="102" width="234" height="116"/>
+<bounds x="460" y="199" width="234" height="116"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="2FBFA329-7DF3-66BE-F1A4-AE72F95311C9" otype="Note" vid="1E384AA0-F0AC-34CE-A48E-80315FEDB679">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="820" y="16" width="365" height="197"/>
-<comment>• GIFT - История/Хранилище подарков. Может быть указан получатель. Флажки &quot;куплен и подарен&quot; - trigger/update логика.&lt;br/&gt;• GIVING - История дарения.  Кому, от кого, когда, что подарили, какая была реакция.&lt;br/&gt;</comment>
+<bounds x="749" y="90" width="365" height="197"/>
+<comment>• GIFT - История/Хранилище подарков. Может быть указан получатель. Флажки &quot;куплен и подарен&quot; - trigger/update логика. Личная таблица, в отличии от GIVING, ведётся от первого лица.&lt;br/&gt;• GIVING - История дарения.  Кому, от кого, когда, что подарили, какая была реакция.&lt;br/&gt;• EVENT - PERSON_ID нужен для того, чтобы ДРы фиксировать.&lt;br/&gt;• CATEGORY_ID в EVENT нужен для того, чтобы генерить потенциальных людей для подарков на событие, которое с пустым PERSON_ID (массовое событие)</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="38AAE1C9-654B-5201-D32E-025C69C82A85" otype="Entity" vid="48B0F864-6AD2-EBEB-A97E-2E0433281A9A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -29,115 +29,131 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="737F7F9F-6A4B-9BF8-9970-F3AFD8F1EBCB" otype="Note" vid="4353B638-92E3-66BF-99E6-FD210C269A26">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="605" y="468" width="181" height="102"/>
+<bounds x="558" y="89" width="181" height="102"/>
 <comment>ACTUAL_PRESENTS&lt;br/&gt;&lt;br/&gt;Показать людей, которым в этот период надо купить подарки, но в GIFT их ещё нет с флагом IS_GOT.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="7BACAE98-0296-4C3A-CC2C-DA41020083AF" otype="Entity" vid="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="279" y="100" width="235" height="124"/>
+<bounds x="308" y="9" width="235" height="145"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="90675D86-C4D0-EA7A-D870-5EA5BB5D82E8" otype="Entity" vid="36B390C0-4981-B321-B107-E9F8394411D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="20" y="325" width="205" height="165"/>
+<bounds x="20" y="340" width="205" height="182"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="97FE5AF0-7979-98AE-BC88-FB176FD9447E" otype="Note" vid="962E9D42-7FD6-D0FD-37A9-A000245A36AD">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="280" y="11" width="356" height="61"/>
+<bounds x="558" y="22" width="356" height="61"/>
 <comment>Вью - события на текущий год!&lt;br/&gt;Вью - события на ближайшие периоды (указывается пользователем).&lt;br/&gt;</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="AE9F8BA0-0DED-7A93-334E-95C7A375092F" otype="Entity" vid="D3DD11E1-25CA-D5DA-37F4-DA52E0BD7531">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="265" y="478" width="234" height="102"/>
+<bounds x="263" y="561" width="234" height="102"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="C859FE4F-4454-F1E5-5D32-96743B8AEFB7" otype="Entity" vid="EBBEB02D-7AB2-6980-5A38-0CDD4D118234">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="17" y="162" width="205" height="119"/>
+<bounds x="20" y="188" width="205" height="119"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="D0428CFE-F3C1-0E61-89F7-7088DF16F6EE" otype="Note" vid="036A92C6-0CD8-42BB-0009-0DE7277BBEFE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="822" y="223" width="357" height="67"/>
+<bounds x="560" y="331" width="357" height="67"/>
 <comment>PERIOD нужен для того, чтобы отсекать события за каждый год, которые могут повторяться по периодам.&lt;br/&gt;События, которые реже 1 раза в год (золотая свадьба и т.п.) должны иметь свой собственный период.</comment>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntityView" oid="F626775C-57E7-54B7-8C5E-EF4CDC83475E" otype="EntityView" vid="568F6DC9-82B4-2E24-1E00-CA0538DD496F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="15" y="524" width="193" height="119"/>
+<bounds x="13" y="638" width="193" height="119"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="F884763C-8681-8E44-5320-2D2795862110" otype="Entity" vid="EEA42756-B341-AC54-C032-340179C3869A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="279" y="255" width="202" height="186"/>
+<bounds x="277" y="341" width="202" height="181"/>
 </OView>
 </objectViews>
 <connectors>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="060FC347-1E7E-AC14-FDFF-F6C126D2389C" otype="Relation" vid_source="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91" vid_target="36B390C0-4981-B321-B107-E9F8394411D6">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="362" y="154"/>
+<point x="201" y="340"/>
+</points>
+</Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="1B135FCC-F5DA-8B22-7250-D2A38A0A95C4" otype="Relation" vid_source="D3DD11E1-25CA-D5DA-37F4-DA52E0BD7531" vid_target="EEA42756-B341-AC54-C032-340179C3869A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="380" y="478"/>
-<point x="380" y="441"/>
+<point x="378" y="561"/>
+<point x="378" y="522"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="1B39279B-C20A-B634-B388-F49AD2BEEC3F" otype="Relation" vid_source="EBBEB02D-7AB2-6980-5A38-0CDD4D118234" vid_target="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="222" y="193"/>
-<point x="279" y="193"/>
+<point x="225" y="191"/>
+<point x="308" y="145"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="374B0124-25FC-7026-69A7-6B7605B47E9D" otype="Relation" vid_source="48B0F864-6AD2-EBEB-A97E-2E0433281A9A" vid_target="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="245" y="64"/>
+<point x="308" y="64"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="39537399-4F6B-CF4D-EF6B-2657BEF7725D" otype="Relation" vid_source="EBBEB02D-7AB2-6980-5A38-0CDD4D118234" vid_target="36B390C0-4981-B321-B107-E9F8394411D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="111" y="281"/>
-<point x="111" y="325"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="585520E3-6CC9-D5DA-28C5-CCCA26C6DB0F" otype="Relation" vid_source="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91" vid_target="08E5E6B1-91FF-1FC7-25CD-3AB1C53E23D1">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<lineWidth>1</lineWidth>
-<points>
-<point x="514" y="160"/>
-<point x="566" y="160"/>
+<point x="112" y="307"/>
+<point x="112" y="340"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="64F9101D-2DD7-348F-7113-A7DC3DED90A5" otype="Relation" vid_source="48B0F864-6AD2-EBEB-A97E-2E0433281A9A" vid_target="EBBEB02D-7AB2-6980-5A38-0CDD4D118234">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="119" y="119"/>
-<point x="119" y="162"/>
+<point x="122" y="119"/>
+<point x="122" y="188"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="6B681CE5-0CC1-F8F9-89D6-176DDE39B6EB" otype="Relation" vid_source="EEA42756-B341-AC54-C032-340179C3869A" vid_target="36B390C0-4981-B321-B107-E9F8394411D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="279" y="383"/>
-<point x="225" y="383"/>
+<point x="277" y="431"/>
+<point x="225" y="431"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="8CBE0798-1111-E3F5-F856-CC4D51AA50D7" otype="Relation" vid_source="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91" vid_target="EEA42756-B341-AC54-C032-340179C3869A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="370" y="224"/>
-<point x="370" y="255"/>
+<point x="393" y="154"/>
+<point x="393" y="341"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="A3552030-C14A-14E2-9FB2-2E7653AD4FF0" otype="Relation" vid_source="08E5E6B1-91FF-1FC7-25CD-3AB1C53E23D1" vid_target="AAF8A251-BBD5-0D62-8ABF-B8FC75586E91">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="511" y="199"/>
+<point x="511" y="154"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="E7A8CFA3-C5F0-A2E1-D00B-E68DA30CAB1A" otype="Relation" vid_source="EBBEB02D-7AB2-6980-5A38-0CDD4D118234" vid_target="EEA42756-B341-AC54-C032-340179C3869A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="222" y="268"/>
-<point x="279" y="268"/>
+<point x="205" y="307"/>
+<point x="277" y="358"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="FA6DB984-9827-A273-1F77-A6D23F5116AC" otype="Relation" vid_source="EBBEB02D-7AB2-6980-5A38-0CDD4D118234" vid_target="36B390C0-4981-B321-B107-E9F8394411D6">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <lineWidth>1</lineWidth>
 <points>
-<point x="121" y="281"/>
-<point x="121" y="325"/>
+<point x="122" y="307"/>
+<point x="122" y="340"/>
 </points>
 </Connector>
 </connectors>
