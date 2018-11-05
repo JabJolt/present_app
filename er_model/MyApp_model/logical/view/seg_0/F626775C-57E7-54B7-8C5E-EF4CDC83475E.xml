@@ -8,6 +8,7 @@
 </engineerTo>
 <userDefined>true</userDefined>
 <userDefinedSQL>create view if not exists V_ACT_PERIOD as&lt;br/&gt;select * from PERIOD &lt;br/&gt;    where strftime(&apos;%Y/%m/%d&apos;,DATETIME(&apos;NOW&apos;)) between DATE_FROM and DATE_TO;</userDefinedSQL>
+<validSQL>false</validSQL>
 <parsed>true</parsed>
 <viewType>EntityView</viewType>
 <usedContainers>

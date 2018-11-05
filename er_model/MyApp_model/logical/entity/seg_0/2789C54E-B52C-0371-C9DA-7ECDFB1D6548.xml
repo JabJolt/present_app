@@ -66,20 +66,6 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="DESCRIPTION" id="295AF70A-355B-B1FA-56E0-66141BD411DF">
-<createdBy>dionis</createdBy>
-<createdTime>2017-12-28 19:51:17 UTC</createdTime>
-<ownerDesignName>MyApp_model</ownerDesignName>
-<engineerTo>
-<item key="426CA45B-1A8F-C267-1536-CC963E167380" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>500</dataTypeSize>
-<ownDataTypeParameters>500,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="910B17B3-AA1D-ABCD-2EFB-1BBAA5A9D6AC" name="PERIOD PK">
